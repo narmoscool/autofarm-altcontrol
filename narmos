@@ -1,0 +1,33 @@
+_G.polarsblade = {
+    client = {
+        fps = 60,
+        rendering = true,
+        gui = false,
+    },
+    items = {
+        mask = true,
+        unjail = true,
+    },
+    server = {
+        handlekicks = true,
+        serverhoponknock = true,
+        serverhoponnoregisters = true,
+        
+        otheraccounts = {
+            switch = false,
+            ids = {
+
+            }
+        }
+    },
+    otherfarmers = {
+        killfarmers = false,
+        jumpatms = false,
+    },
+    webhook = {
+        switch = true,
+        link = "https://discord.com/api/webhooks/1269013119137484981/rgyWM69v0Z517KrKI9FqC4cORRoYPaCzVbZke8Y31uuO0hbg5UZtlUTWJME6X73P4GxA",
+    },
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/422a2534a2c89c57bd56c38c7d6e20d9.lua"))()
