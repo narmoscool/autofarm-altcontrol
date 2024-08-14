@@ -26,7 +26,7 @@ _G.polarsblade = {
     },
     webhook = {
         switch = true,
-        link = "https://discord.com/api/webhooks/1269013119137484981/rgyWM69v0Z517KrKI9FqC4cORRoYPaCzVbZke8Y31uuO0hbg5UZtlUTWJME6X73P4GxA",
+        link = "https://discord.com/api/webhooks/1273428207839870997/cVJx5ZIoYW6QFAYEdY-6Emu__awYkr8HC0aPX_39eYKyAHgNo8Udlim7OWIcmIGcqtwG",
     },
 }
 
