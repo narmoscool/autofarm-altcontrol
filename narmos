@@ -1,33 +1,82 @@
-_G.polarsblade = {
-    client = {
-        fps = 60,
-        rendering = true,
-        gui = false,
+_G.configuration = {
+    host = { "ux_em", "xanzcursel", -- only usernames
+},
+    prefix = "/", -- prefix for commands
+    framelimit = 60, -- frame limit
+    ui = true, -- places a ui on the screen displaying the accounts cash
+    setups = {
+        ['bank'] = 'https://raw.githubusercontent.com/polarsblade/setups/main/bank',
+        ['club'] = 'https://raw.githubusercontent.com/polarsblade/setups/main/club',
+        ['bank2'] = 'https://raw.githubusercontent.com/polarsblade/setups/main/bank2',
+        ['train'] = 'https://raw.githubusercontent.com/polarsblade/setups/main/train',
     },
-    items = {
-        mask = true,
-        unjail = true,
-    },
-    server = {
-        handlekicks = true,
-        serverhoponknock = true,
-        serverhoponnoregisters = true,
-        
-        otheraccounts = {
-            switch = false,
-            ids = {
-
-            }
+    accounts = {
+        ids = { -- ids only
+            7025121862,
+            7025134199,
+            7025138827,
+            7025143847,
+            7025142862,
+            7025138495,
+            7025166010,
+            7025163100,
+            7025159330,
+            7025164766,
+            7025156983,
+            7025180099,
+            7025176285,
+            7025174868,
+            7025196538,
+            7025196053,
+            7025185837,
+            7025195705,
+            7025204613,
+            7025199750,
+            7025218572,
+            7025218229,
+            7025224099,
+            7025218796,
+            7026746957,
+            7026769444,
+            7026817530,
+            7026818352,
+            7026826385,
+            7026828423,
+            7026851599,
+            7026849688,
+            7026854269,
+            7026845904,
+            7026863160,
+        },
+        fillgaps = true, -- fills gap for missing accounts
+        advertise = "/polarsblade", -- advertise message
+        cdropcovertax = true, -- cover tax for cdrop
+        responses = { -- responses for commands
+            toggle = true, -- toggle
+            ["random"] = "randomize complete",
+            ["fps"] = "fps set",
+            ["redeemcode"] = "code redeemed",
+            ["drop"] = {
+                "drop enabled", -- drop when toggled on
+                "drop disabled" -- drop when toggled off
+            },
+            ["wallet"] = {
+                "wallet equipped", -- wallets when equipped
+                "wallet unequipped" -- wallets when unequipped
+            },
+            ["setup"] = "setup complete",
+            ["circle"] = "circle formation complete",
+            ["setposition"] = "position set",
+            ["cdrop"] = {
+                "dropping amount", -- cdrop when enabled
+                "ended drop", -- cdrop when disabled
+            },
+            ["line"] = "lined up",
+            ["unarrest"] = "unarrested",
+            ["block"] = "blocking",
+            ["unblock"] = "unblocking",
         }
-    },
-    otherfarmers = {
-        killfarmers = false,
-        jumpatms = false,
-    },
-    webhook = {
-        switch = true,
-        link = "https://discord.com/api/webhooks/1273428207839870997/cVJx5ZIoYW6QFAYEdY-6Emu__awYkr8HC0aPX_39eYKyAHgNo8Udlim7OWIcmIGcqtwG",
-    },
+    }
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/422a2534a2c89c57bd56c38c7d6e20d9.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/dde85c6b67d51ecc1631be707f84d9e4.lua"))()
